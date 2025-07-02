@@ -1,0 +1,2 @@
+-- Database migration script placeholder
+-- Schema includes users, rooms, equipment, bookings, payments, notifications tables
