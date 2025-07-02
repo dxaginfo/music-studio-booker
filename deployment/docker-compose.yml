@@ -1,0 +1,19 @@
+# Docker-compose placeholder
+version: '3.8'
+services:
+  web:
+    build: ./frontend
+    ports:
+      - '3000:3000'
+  api:
+    build: ./backend
+    ports:
+      - '5000:5000'
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: musicstudio
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - '5432:5432'
